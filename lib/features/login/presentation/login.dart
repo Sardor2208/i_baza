@@ -245,17 +245,18 @@ class _LoginScreenState extends State<LoginScreen> {
                   onPressed: () {},
                   style: ButtonStyle(
                     backgroundColor: MaterialStateColor.resolveWith(
-                          (states) => const Color(0xFFFFF9DD),
+                      (states) => const Color(0xFFFFF9DD),
                     ),
                     elevation: MaterialStateProperty.resolveWith((states) => 0),
                   ),
                   child: Text(
                     "Ro‘yxatdan o‘tish",
                     style: TextStyle(
-                        fontSize: 14.sp,
-                        fontFamily: "Rubik",
-                        fontWeight: FontWeight.w500,
-                        color: const Color(0xFF292929)),
+                      fontSize: 14.sp,
+                      fontFamily: "Rubik",
+                      fontWeight: FontWeight.w500,
+                      color: const Color(0xFF292929),
+                    ),
                   ),
                 ),
               ),
