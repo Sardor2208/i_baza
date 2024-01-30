@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:i_baza/features/login/presentation/login.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -207,7 +208,8 @@ class _SignUpState extends State<SignUp> {
               Center(
                 child: TextButton(
                   onPressed: () {
-                    Navigator.of(context).pushReplacementNamed("/login");
+                    //Shu yerni o'zgartirdim
+                    Navigator.of(context).push(MaterialPageRoute(builder: (_)=>LoginScreen()));
                   },
                   child: Text(
                     "Ro‘yxatdan o‘tganmisiz?",

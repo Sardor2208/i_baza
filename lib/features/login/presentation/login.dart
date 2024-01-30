@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:i_baza/features/login/presentation/sign_up.dart';
 import 'package:i_baza/objectbox.g.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -31,6 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               SizedBox(
+
                 height: 48.h,
               ),
               Text(
@@ -178,7 +180,10 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               Container(
                 height: 48.h,
-                width: MediaQuery.of(context).size.width,
+                width: MediaQuery
+                    .of(context)
+                    .size
+                    .width,
                 decoration: BoxDecoration(
                   color: Color(0xFFFFE054),
                   borderRadius: BorderRadius.circular(8.r),
@@ -187,7 +192,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   onPressed: () {},
                   style: ButtonStyle(
                     backgroundColor: MaterialStateColor.resolveWith(
-                      (states) => Color(0xFFFFE054),
+                          (states) => Color(0xFFFFE054),
                     ),
                     elevation: MaterialStateProperty.resolveWith((states) => 0),
                   ),
@@ -202,12 +207,16 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               SizedBox(
-                height: (189 / 812) * MediaQuery.of(context).size.height,
+                height: (189 / 812) * MediaQuery
+                    .of(context)
+                    .size
+                    .height,
               ),
               Center(
                 child: TextButton(
                   onPressed: () {
-                    Navigator.of(context).pushReplacementNamed("/signup");
+                    //Shu yerni o'zgartirdim
+                    Navigator.of(context).push(MaterialPageRoute(builder: (_)=>SignUp()));
                   },
                   child: Text(
                     "Ilovada yangimisiz?",
@@ -224,7 +233,10 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               Container(
                 height: 48.h,
-                width: MediaQuery.of(context).size.width,
+                width: MediaQuery
+                    .of(context)
+                    .size
+                    .width,
                 decoration: BoxDecoration(
                   color: const Color(0xFFFFF9DD),
                   borderRadius: BorderRadius.circular(8.r),
