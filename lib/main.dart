@@ -101,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Is authenticated:${StorageRepository.getAuthStatus()}',
+              'is authenticated:${StorageRepository.getAuthStatus()}',
             ),
             Text(
               '$_counter',
